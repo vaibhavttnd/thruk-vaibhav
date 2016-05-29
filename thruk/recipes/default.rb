@@ -68,3 +68,12 @@ sudo /etc/init.d/nagios3 start
 
   EOF
 end
+
+bash 'restart' do
+  code <<-EOF
+sudo service thruk restart
+sudo service nagios3 restart
+sudo service apache2 restart
+  EOF
+end
+
