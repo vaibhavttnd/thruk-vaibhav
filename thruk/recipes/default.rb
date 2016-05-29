@@ -20,7 +20,7 @@ end
 #install live status
 package 'check-mk-livestatus' do
   action :install
-done
+end
 
 
 #htpasswd for thruk
